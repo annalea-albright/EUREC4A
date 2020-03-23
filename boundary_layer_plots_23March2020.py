@@ -656,7 +656,7 @@ max_alt = 4000
 static_stability_rm_vec = static_stability(T_rm_K, theta_rm, pres_rm) 
 plot_rolling_mean(static_stability_rm_vec, xlim_min=0, xlim_max=0.25, ylim_max=max_alt, xlabel='static stability / K/hPa')
 
-#%% find where stability first exceeds threshold = 0.1 K/hPa
+#%% find where stability first exceeds threshold = 0.1 K/hPa, i.e. following Bony and Stevens, 2018
 
 def static_stability_thres(static_stability_rm_vec):
 
