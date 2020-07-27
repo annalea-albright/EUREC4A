@@ -73,13 +73,7 @@ def preprocess_circle_means(fp_flight, fp_dropsondes):
     
     sondes = subset_sondes
     print(repr(len(circle_num)), "circles performed on", repr(day_str))
-    
-    # ===========================================================
-    # for individual sondes, load start time, convert to local time
-    # =============================================================================
-    all_sondes = xr.open_dataset(fp_dropsondes).swap_dims({"sounding": "launch_time"})
-    all_sondes.launch_time
-    
+
     
     # =============================================================================
     #      load measured variables
