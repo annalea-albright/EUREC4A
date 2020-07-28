@@ -443,7 +443,7 @@ def preprocess_circle_means(fp_flight, fp_dropsondes):
         
         """
         Returns inversion height defined as the height where static stability profiles
-        first exceed 0.1 K/hPa
+        first exceed 0.1 K/hPa (from Bony and Stevens 2018, Measuring Area-Averaged Vertical Motions with Dropsondes, p 772)
         
         """
         static_stability = ds.static_stability[:,10:]
